@@ -21,4 +21,4 @@ endfunction
 " --------------------------------
 "  Expose our commands to the user
 " --------------------------------
-command! <leader>+ call Additup()
+command! additup call Additup()
