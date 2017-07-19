@@ -8,13 +8,12 @@ python3 sys.path.append(vim.eval('expand("<sfile>:h")'))
 " --------------------------------
 "  Function(s)
 " --------------------------------
-function! TemplateExample()
-python << endOfPython
+function! Additup()
+python3 << endOfPython
 
 from add_it_up import add_it_up_example
 
-for n in range(5):
-    print(add_it_up_example())
+add_it_up_example()
 
 endOfPython
 endfunction
@@ -22,4 +21,4 @@ endfunction
 " --------------------------------
 "  Expose our commands to the user
 " --------------------------------
-command! Example call TemplateExample()
+command! <leader>+ call Additup()
